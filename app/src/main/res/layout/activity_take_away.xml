@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_takeaway"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/txtv_cust_id"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary"
+        android:paddingTop="35dp"
+        android:text="@string/txt_cust_id"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@android:color/white" />
+
+    <EditText
+        android:id="@+id/editText_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtv_cust_id"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:hint="@string/edTxt_name"
+        android:inputType="textCapSentences|textPersonName"
+        android:textColorHighlight="@android:color/holo_purple" />
+
+    <EditText
+        android:id="@+id/editText_phone_numb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/edTxt_phone"
+        android:inputType="phone"
+        android:textColorHighlight="@android:color/holo_purple" />
+
+    <EditText
+        android:id="@+id/editText_addr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_phone_numb"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/edTxt_addr"
+        android:inputType="textCapSentences|textPostalAddress"
+        android:textColorHighlight="@android:color/holo_purple" />
+
+    <EditText
+        android:id="@+id/editText_additional_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_addr"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/edTxt_additional_info"
+        android:inputType="textMultiLine"
+        android:textColorHighlight="@android:color/holo_purple" />
+
+    <Button
+        android:id="@+id/btn_choose_food"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_additional_info"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:onClick="onClicTakeAway"
+        android:background="@color/colorPrimary"
+        android:text="@string/txt_choose_food"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+</RelativeLayout>

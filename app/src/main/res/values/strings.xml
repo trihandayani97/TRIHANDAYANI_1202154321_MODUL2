@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">EAD Resto</string>
+    <string name="app_desc">Osas Restaurant App</string>
+    <string name="resto_app">Resto App</string>
+    <string name="txt_choose_menu">Choose Menu</string>
+    <string name="txt_rbtn_dine_in">Dine In</string>
+    <string name="txt_rbtn_take_away">Take Away</string>
+    <string name="txt_btn_order_now">Order Now</string>
+    <string name="txt_cust_id">Customer Identity</string>
+    <string name="edTxt_name">Name</string>
+    <string name="edTxt_phone">Phone</string>
+    <string name="edTxt_addr">Address</string>
+    <string name="edTxt_additional_info">Additional Info</string>
+    <string name="txt_choose_food">Choose Food</string>
+    <string name="txt_detail_cust">Detail Customer</string>
+    <string name="txtlbl_no_meja">No. Meja</string>
+    <string name="txtTitle_food_list">Food List</string>
+    <string name="title_detail_menu">Detail Menu</string>
+    <string name="imgDesc_detail_menu">image display from foodlist</string>
+    <string name="btnTxt_back_to_main_menu">Back to Main Menu</string>
+    <string-array name="no_meja">
+        <item>Meja01</item>
+        <item>Meja02</item>
+        <item>Meja03</item>
+        <item>Meja04</item>
+    </string-array>
+</resources>

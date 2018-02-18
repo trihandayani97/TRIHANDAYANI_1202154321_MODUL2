@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_main_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/logo_app"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/holo_blue_dark"
+        android:contentDescription="@string/app_desc"
+        android:src="@drawable/mylogo1" />
+
+    <TextView
+        android:id="@+id/txtv_main_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo_app"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="93dp"
+        android:text="@string/txt_choose_menu"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/rgroup_menu"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtv_main_menu"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rbtn_dine_in"
+            style="@android:style/Widget.Holo.CompoundButton.RadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_rbtn_dine_in"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/rbtn_take_away"
+            style="@android:style/Widget.Holo.CompoundButton.RadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_rbtn_take_away"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="20sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_order_now"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rgroup_menu"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:background="@android:color/holo_blue_dark"
+        android:text="@string/txt_btn_order_now"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:onClick="onClickOrder"/>
+</RelativeLayout>
